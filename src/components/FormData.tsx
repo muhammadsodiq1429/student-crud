@@ -19,11 +19,7 @@ const initialState: IStudent = {
   phone_number: "",
 };
 
-const FormData = ({
-  setStudents,
-  updatingStudent,
-  setUpdatingStudent,
-}: IProps) => {
+const FormData = ({ setStudents, updatingStudent }: IProps) => {
   const { formData, handleChange, setFormData } =
     useGetInputValue(initialState);
 
